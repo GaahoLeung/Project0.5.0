@@ -24,6 +24,7 @@ public class MovieCardAdapter extends RecyclerView.Adapter<MovieCardAdapter.Movi
 
     private final Context context;
     private ArrayList<Movie> recommendList;
+    private Movie movie;
 
     public MovieCardAdapter(Context context, ArrayList<Movie> recommendList) {
         this.context = context;
@@ -42,7 +43,7 @@ public class MovieCardAdapter extends RecyclerView.Adapter<MovieCardAdapter.Movi
     //数据和View绑定
     public void onBindViewHolder(@NonNull MoviewCardViewHolder moviewCardViewHolder, int i) {
         //根据位置得到对应的数据
-        Movie movie = recommendList.get(i);
+        movie = recommendList.get(i);
 //        MoviewCardViewHolder.textViewTitleYear.setText();
     }
 

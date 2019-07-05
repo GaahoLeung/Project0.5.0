@@ -89,8 +89,9 @@
 
 
         <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/card_favorite"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="2" />
+            android:layout_weight="0.5" />
     </LinearLayout>
 </android.support.design.card.MaterialCardView>

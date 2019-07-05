@@ -11,6 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.NoActionBar">
+        <activity
+            android:name=".activities.MovieInfoActivity"
+            android:label="@string/title_activity_movie_info"
+            android:theme="@style/TranslucentTheme">
+
+        </activity>
         <activity android:name=".activities.LabelActivity" />
         <activity android:name=".activities.SignUpInActivity" />
         <activity android:name=".activities.SplashActivity">

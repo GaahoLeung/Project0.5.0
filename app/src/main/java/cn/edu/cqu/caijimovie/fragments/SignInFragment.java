@@ -34,6 +34,7 @@ import java.io.IOException;
 import cn.edu.cqu.caijimovie.R;
 import cn.edu.cqu.caijimovie.activities.LabelActivity;
 import cn.edu.cqu.caijimovie.activities.MainActivity;
+import cn.edu.cqu.caijimovie.activities.MovieInfoActivity;
 import cn.edu.cqu.caijimovie.activities.SignUpInActivity;
 import cn.edu.cqu.caijimovie.activities.SplashActivity;
 import cn.edu.cqu.caijimovie.entities.Result;
@@ -106,7 +107,7 @@ public class SignInFragment extends MyFragment implements View.OnClickListener {
                         usermailstr = usermail.getText().toString().trim();
                         userpasswordstr = userpassword.getText().toString().trim();
 
-                        Intent intent = new Intent(getActivity().getApplicationContext(), MainActivity.class);
+                        Intent intent = new Intent(getActivity().getApplicationContext(), MovieInfoActivity.class);
                         intent.putExtra("currentuser", user);
                         startActivity(intent);
                         getActivity().finish();
