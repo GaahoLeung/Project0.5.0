@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/movie_info_activity"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".activities.MovieInfoActivity">
 
     <android.support.design.widget.CoordinatorLayout
@@ -17,7 +17,7 @@
             android:id="@+id/app_bar"
             android:layout_width="match_parent"
             android:layout_height="@dimen/app_bar_height"
-            android:fitsSystemWindows="false"
+            android:fitsSystemWindows="true"
             android:theme="@style/AppBarOverlay">
 
             <android.support.design.widget.CollapsingToolbarLayout
@@ -58,7 +58,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:ellipsize="end"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
                             android:text="孟买酒店"
                             android:textSize="24dp" />
 
@@ -127,6 +130,7 @@
                     android:layout_height="?attr/actionBarSize"
                     android:gravity="center"
                     app:layout_collapseMode="pin"
+                    app:expanded="true"
                     app:popupTheme="@style/PopupOverlay">
 
                     <ImageButton
@@ -161,6 +165,7 @@
 
     </android.support.design.widget.CoordinatorLayout>
 
+    <!--发表言论的Fab-->
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_comment"
         android:layout_width="wrap_content"
@@ -176,6 +181,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.865"
-        app:srcCompat="@drawable/ic_sms_white_24dp" />
+        app:srcCompat="@drawable/ic_comment_white_24dp" />
 
 </android.support.constraint.ConstraintLayout>
